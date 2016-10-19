@@ -1,0 +1,26 @@
+{
+  "name": "lead-dedup",
+  "version": "1.0.0",
+  "description": "command line lead deduplication in js",
+  "bin": {
+    "dmitry-dedup": "bin/dmitry-dedup.js"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "lead",
+    "deduplication"
+  ],
+  "author": "Dmitry White",
+  "license": "MIT",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.1.2",
+    "sinon": "^1.17.6"
+  }
+}
