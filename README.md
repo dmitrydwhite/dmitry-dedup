@@ -21,7 +21,7 @@ The module will create a new JSON file adjacent to the passed leads file, named 
 
 If the `-l` or `--log` command line option is also passed, the module will create an additional file logging the changes that it made to the original file, again adjacent to the original file location, and named `deduplicated-changeLog.json`.
 
-#### Specific Implementation Notes
+#### Specific Implementation and Prioritization Notes
 
 This module expects the leads data to be in the following format:
 
@@ -34,3 +34,5 @@ This module expects the leads data to be in the following format:
 ```
 
 Any other fields are optional.  However, this module will obliterate the entire older record with a newer record; fields that were present on an old record but not on a new record will NOT be retained.
+
+`_id` and `email` are required to be unique; duplicates in those fields will overwrite older records.  If a duplicate of a record is found but its `entryDate` is equal to the first instance, priority will be given to a record with a higher index (found later) in the list.
