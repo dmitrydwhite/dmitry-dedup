@@ -30,7 +30,8 @@ This module expects the leads data to be in the following format:
         "_id": "<any unique identifier>",
         "email": "<any unique email>",
         "entryDate": "<a string value that can be converted to a JavaScript Date object>"
-    }]}
+    }]
+}
 ```
 
 Any other fields are optional.  However, this module will obliterate the entire older record with a newer record; fields that were present on an old record but not on a new record will NOT be retained.
