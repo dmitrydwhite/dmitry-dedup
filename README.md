@@ -5,6 +5,9 @@ A Node Module that accepts a JSON formatted dataset of leads, de-duplicates them
 #### Caveat
 I decided to use some of the ES6 syntax that I am learning in my own time on this project as well; the upshot is that this module wants Node v4 or better. NPM will give you a friendly reminder if you npm install this with a lower version of Node.
 
+#### Review the Code
+The GitHub repo for this module is [here](https://github.com/dmitrydwhite/dmitry-dedup)
+
 #### Implementation
 
 To download:
@@ -14,12 +17,14 @@ $ npm install dmitry-dedup
 
 To use
 ```
-$ dmitry-dedup <path to leads JSON file> [-l|--log]
+$ dmitry-dedup <path to leads JSON file> [-n|--no-log]
 ```
 
 The module will create a new JSON file adjacent to the passed leads file, named `deduplicated-<original file name>`.
 
-If the `-l` or `--log` command line option is also passed, the module will create an additional file logging the changes that it made to the original file, again adjacent to the original file location, and named `deduplicated-changeLog.json`.
+Additionally, the module will create an additional file logging the changes that it made to the original file, again adjacent to the original file location, and named `deduplicated-changeLog.json`.
+
+If the `-n` or `--no-log` command line option is also passed, the module will not create the changeLog file.
 
 #### Specific Implementation and Prioritization Notes
 

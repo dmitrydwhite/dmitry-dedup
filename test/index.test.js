@@ -38,13 +38,11 @@ describe('dmitry-dedup', function () {
     });
   });
 
-  describe('doLogChanges', function () {
-    it("sets class property `shouldLogChanges` to true", function () {
-      dedup.shouldLogChanges = false;
+  describe('doNotLogChanges', function () {
+    it("sets class property `shouldLogChanges` to false", function () {
+      dedup.doNotLogChanges();
 
-      dedup.doLogChanges();
-
-      expect(dedup.shouldLogChanges).to.be.true;
+      expect(dedup.shouldLogChanges).to.be.false;
     });
   });
 
@@ -272,7 +270,7 @@ describe('dmitry-dedup', function () {
   describe('parseArgs', function () {
     let displayNoFileArgStub = null;
     let optionMethodStub = null;
-    const testOption = '-l';
+    const testOption = '-n';
 
     beforeEach(function () {
       dedup.originalFileLoc = '';
