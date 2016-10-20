@@ -12,11 +12,16 @@
     "lead",
     "deduplication"
   ],
-  "author": "Dmitry White",
+  "author": "Dmitry White <white.dmitry@gmail.com>",
   "license": "MIT",
   "engines": {
     "node": ">=4.0.0"
   },
+  "bugs": "https://github.com/dmitrydwhite/dmitry-dedup/issues",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/dmitrydwhite/dmitry-dedup"
+  },  
   "dependencies": {
     "fs": "0.0.1-security",
     "path": "^0.12.7"

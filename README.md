@@ -12,7 +12,7 @@ The GitHub repo for this module is [here](https://github.com/dmitrydwhite/dmitry
 
 To download:
 ```
-$ npm install dmitry-dedup
+$ npm install -g dmitry-dedup
 ```
 
 To use
