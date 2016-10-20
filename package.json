@@ -1,6 +1,6 @@
 {
   "name": "dmitry-dedup",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "command line lead deduplication in js",
   "bin": {
     "dmitry-dedup": "bin/dmitry-dedup.js"
@@ -18,10 +18,10 @@
     "node": ">=4.0.0"
   },
   "bugs": "https://github.com/dmitrydwhite/dmitry-dedup/issues",
-  "repository" : {
-    "type" : "git",
-    "url" : "https://github.com/dmitrydwhite/dmitry-dedup"
-  },  
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dmitrydwhite/dmitry-dedup"
+  },
   "dependencies": {
     "fs": "0.0.1-security",
     "path": "^0.12.7"
