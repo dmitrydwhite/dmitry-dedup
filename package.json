@@ -1,6 +1,6 @@
 {
   "name": "dmitry-dedup",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "command line lead deduplication in js",
   "bin": {
     "dmitry-dedup": "bin/dmitry-dedup.js"
